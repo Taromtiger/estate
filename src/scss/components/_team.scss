@@ -1,0 +1,37 @@
+.team {
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: $font-subtitle;
+    color: $dark-grey;
+    letter-spacing: 0.3px;
+    max-width: 485px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  &__img {
+    margin-bottom: 25px;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+  }
+
+  &__profession {
+    color: $dark-grey;
+    line-height: 1.8;
+  }
+}
