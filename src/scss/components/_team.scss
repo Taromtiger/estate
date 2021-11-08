@@ -6,7 +6,7 @@
 
   &__text {
     font-size: $font-subtitle;
-    color: $dark-grey;
+    color: $gray-500;
     letter-spacing: 0.3px;
     max-width: 485px;
     width: 100%;
@@ -31,7 +31,7 @@
   }
 
   &__profession {
-    color: $dark-grey;
+    color: $gray-500;
     line-height: 1.8;
   }
 }

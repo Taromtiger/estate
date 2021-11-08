@@ -1,4 +1,6 @@
 .idea
+.gitignore
+.readme.md
 
 # dependencies
 /node_modules
