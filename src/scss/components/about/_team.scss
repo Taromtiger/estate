@@ -11,6 +11,10 @@
     max-width: 485px;
     width: 100%;
     margin-bottom: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
   }
 
   &__list {
@@ -18,20 +22,37 @@
     justify-content: space-between;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 25px;
+  &__item {
+    max-width: 256px;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
   }
 
   &__img {
     margin-bottom: 25px;
+    width: 256px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: $border-cards-radius;
   }
 
   &__name {
     margin-bottom: 10px;
+
   }
 
   &__profession {
     color: $gray-500;
     line-height: 1.8;
+  }
+
+  &__name,
+  &__profession {
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
   }
 }
